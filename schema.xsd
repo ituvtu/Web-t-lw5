@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="animalForum">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="categories" type="categoriesType"/>
+                <xs:element name="users" type="usersType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="categoriesType">
+        <xs:sequence>
+            <xs:element name="category" type="categoryType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="categoryType">
+        <xs:sequence>
+            <xs:element name="title" type="xs:string"/>
+            <xs:element name="threads" type="threadsType"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="threadsType">
+        <xs:sequence>
+            <xs:element name="thread" type="threadType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="threadType">
+        <xs:sequence>
+            <xs:element name="title" type="xs:string"/>
+            <xs:element name="posts" type="postsType"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="postsType">
+        <xs:sequence>
+            <xs:element name="post" type="postType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="postType">
+        <xs:sequence>
+            <xs:element name="author" type="authorType"/>
+            <xs:element name="content" type="xs:string"/>
+            <xs:element name="timestamp" type="xs:dateTime"/>
+            <xs:element name="topic" type="xs:string"/>
+            <xs:element name="keywords" type="keywordsType"/>
+            <xs:element name="comments" type="commentsType" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="keywordsType">
+    <xs:sequence>
+        <xs:element name="keyword" type="xs:string" maxOccurs="unbounded"/>
+    </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="authorType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="userId" type="xs:string" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    
+    <xs:complexType name="commentType">
+        <xs:sequence>
+            <xs:element name="author" type="authorType"/>
+            <xs:element name="content" type="xs:string"/>
+            <xs:element name="timestamp" type="xs:dateTime"/>
+            <xs:element name="comments" type="commentsType" minOccurs="0"/> <!-- Опціональний елемент для вкладених коментарів -->
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="commentsType">
+        <xs:sequence>
+            <xs:element name="comment" type="commentType" maxOccurs="unbounded"/> <!-- Дозволяє необмежену кількість вкладених коментарів -->
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="usersType">
+        <xs:sequence>
+            <xs:element name="user" type="userType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="userType">
+        <xs:sequence>
+            <xs:element name="username" type="xs:string"/>
+            <xs:element name="joinedDate" type="xs:date"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:string" use="required"/>
+    </xs:complexType>
+</xs:schema>

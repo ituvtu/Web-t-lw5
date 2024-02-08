@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+<animalForum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd">
+    <categories>
+        <!-- Категорії та теми -->
+        <category id="cats">
+            <title>Кішки</title>
+            <threads>
+                <thread id="thread1">
+                    <title>Породи кішок</title>
+                    <posts>
+                        <post id="post1">
+                            <author userId="user1">Користувач1</author>
+                            <content>Сіамські кішки мають неймовірне забарвлення.</content>
+                            <timestamp>2023-03-15T12:00:00</timestamp>
+                            <topic>Породи кішок</topic>
+                            <keywords>
+                                <keyword>сіамські кішки</keyword>
+                                <keyword>забарвлення</keyword>
+                                <keyword>породи</keyword>
+                            </keywords>
+                            <comments>
+                                <comment id="comment1">
+                                    <author userId="user2"></author>
+                                    <content>Так, вони дуже красиві!</content>
+                                    <timestamp>2023-03-15T12:30:00</timestamp>
+                                </comment>
+                                <comment id="comment2">
+                                    <author userId="user2"></author>
+                                    <content>хахаха</content>
+                                    <timestamp>2023-03-15T12:30:00</timestamp>
+                                </comment>
+                            </comments>
+                        </post>
+                        
+                        <post id="post2">
+                            <author userId="user1">Користувач1</author>
+                            <content>Кішки приємно мурликають.</content>
+                            <timestamp>2023-03-15T12:00:00</timestamp>
+                            <topic>Породи кішок</topic>
+                            <keywords>
+                                <keyword>кішки</keyword> 
+                               <keyword>муркотіння</keyword> 
+                            </keywords>
+                            <comments>
+                                <comment id="comment1">
+                                    <author userId="user2">Користувач2</author>
+                                    <content>Так, вони дуже гарні звуки роблять!</content>
+                                    <timestamp>2023-03-15T12:30:00</timestamp>
+                                </comment>
+                            </comments>
+                        </post>
+                        
+                        <post id="post3">
+                            <author userId="user1">Користувач1</author>
+                            <content>Які породи кішок найбільш дружелюбні?</content>
+                            <timestamp>2023-03-15T08:00:00</timestamp>
+                            <topic>Породи кішок</topic>
+                            <keywords> 
+                                <keyword>дружелюбність</keyword> 
+                                <keyword>породи кішок</keyword> 
+                            </keywords>
+                            <comments>
+                                <comment id="comment3-1">
+                                    <author userId="user2">Користувач2</author>
+                                    <content>Мені здається, мейн-куни дуже доброзичливі.</content>
+                                    <timestamp>2023-03-15T08:30:00</timestamp>
+                                </comment>
+                                <comment id="comment3-2">
+                                    <author userId="user3">Користувач3</author>
+                                    <content>Сфінкси також дуже ласкаві!</content>
+                                    <timestamp>2023-03-15T09:15:00</timestamp>
+                                </comment>
+                            </comments>
+                        </post>
+                        
+                        <post id="post4">
+                            <author userId="user4">Користувач4</author>
+                            <content>Чим краще годувати стерилізовану кішку?</content>
+                            <timestamp>2023-03-15T10:00:00</timestamp>
+                            <topic>Догляд за кішками</topic>
+                            <keywords>
+                                <keyword>стерилізована кішка</keyword> 
+                                <keyword>годування</keyword> 
+                            </keywords>
+                            <comments>
+                                <comment id="Comment4-1">
+                                    <author userId="user5">Користувач5</author>
+                                    <content>Ветеринари зазвичай рекомендують спеціальний корм для стерилізованих кішок.</content>
+                                    <timestamp>2023-03-15T10:45:00</timestamp>
+                                </comment>
+                            </comments>
+                        </post>
+                        
+                        <post id="post5">
+                            <author userId="user5">Користувач4</author>
+                            <content>Як розважити котика?</content>
+                            <timestamp>2023-03-15T10:00:00</timestamp>
+                            <topic>Розваги для кішок</topic>
+                            <keywords>
+                                <keyword>розваги</keyword> 
+                                <keyword>котик</keyword> 
+                                <keyword>іграшки</keyword> 
+                            </keywords>
+                            <comments>
+                                <comment id="Comment5-1">
+                                    <author userId="user5">Користувач5</author>
+                                    <content>Ветеринари зазвичай рекомендують спеціальні іграшки.</content>
+                                    <timestamp>2023-03-15T10:45:00</timestamp>
+                                </comment>
+                            </comments>
+                        </post>
+                        
+                    </posts>
+                </thread>
+            </threads>
+        </category>
+
+        <category id="dogs">
+            <title>Собаки</title>
+            <threads>
+                <thread id="thread2">
+                    <title>Догляд за собаками</title>
+                    <posts>
+                        <post id="post1">
+                            <author userId="user2">Користувач2</author>
+                            <content>Найкращий корм для активних собак.</content>
+                            <timestamp>2023-03-16T11:00:00</timestamp>
+                            <topic>Догляд за собаками</topic>
+                            <keywords>
+                                <keyword>корм</keyword> 
+                                <keyword>активні собаки</keyword> 
+                                <keyword>годування</keyword> 
+                            </keywords>
+                            <comments>
+                                <comment id="comment2-1-1">
+                                    <author userId="user4">Користувач4</author>
+                                    <content>У мене теж є собака, вона дуже активна.</content>
+                                    <timestamp>2023-03-15T14:00:00</timestamp>
+                                </comment>
+                            </comments>
+                        </post>
+                        
+                        <post id="post2">
+                            <author userId="user2">Користувач2</author>
+                            <content>Що робити, якщо не лягає не спати?</content>
+                            <timestamp>2023-03-16T11:00:00</timestamp>
+                            <topic>Догляд за собаками</topic>
+                            <keywords>
+                                <keyword>сон</keyword> 
+                                <keyword>проблеми зі сном</keyword> 
+                                <keyword>собака</keyword> 
+                            </keywords>
+                            <comments>
+                                <comment id="comment2-1-1">
+                                    <author userId="user4">Користувач4</author>
+                                    <content>Спробувати заспокоїти собаку обіймами.</content>
+                                    <timestamp>2023-03-15T14:00:00</timestamp>
+                                </comment>
+                            </comments>
+                        </post>
+                        
+                        <post id="post3">
+                            <author userId="user2">Користувач2</author>
+                            <content>Що робити при страху купатися?</content>
+                            <timestamp>2023-03-16T11:00:00</timestamp>
+                            <topic>Догляд за собаками</topic>
+                            <keywords>
+                                <keyword>купання</keyword> 
+                                <keyword>страх</keyword> 
+                                <keyword>собака</keyword> 
+                            </keywords>
+                            <comments>
+                                <comment id="comment2-1-1">
+                                    <author userId="user4">Користувач4</author>
+                                    <content>Якщо боїться собака, то варто поступово її обливати та зволожувати водою.</content>
+                                    <timestamp>2023-03-15T14:00:00</timestamp>
+                                    <comments>
+                                        <comment id="comment1-1">
+                                            <author userId="user3">Користувач3</author>
+                                            <content>Не смішний жарт.</content>
+                                            <timestamp>2023-03-15T13:00:00</timestamp>
+                                            <comments>
+                                                <comment id="comment1-1-1">
+                                                    <author userId="user4">Користувач4</author>
+                                                    <content>Ваша думка дуже важлива</content>
+                                                    <timestamp>2023-03-15T13:00:00</timestamp>
+                                                </comment>
+                                            </comments>
+                                            </comment>
+                                    </comments>
+                                    </comment>
+                            </comments>
+                        </post>
+                        
+                        <post id="post4">
+                            <author userId="user11">Користувач11</author>
+                            <content>Які породи собак найкраще підходять для квартири?</content>
+                            <timestamp>2023-03-17T08:00:00</timestamp>
+                            <topic>Вибір породи собаки</topic>
+                            <keywords>
+                                <keyword>квартирні собаки</keyword> 
+                                <keyword>породи собак</keyword> 
+                                <keyword>вибір</keyword> 
+                            </keywords>
+                            <comments>
+                                <comment id="dogComment1-1">
+                                    <author userId="user12">Користувач12</author>
+                                    <content>Французькі бульдоги добре адаптуються до життя у квартирі.</content>
+                                    <timestamp>2023-03-17T08:30:00</timestamp>
+                                    
+                                </comment>
+                            </comments>
+                        </post>
+                        
+                        <post id="post5">
+                            <author userId="user13">Користувач13</author>
+                            <content>Які собаки найкраще підходять для сімей з маленькими дітьми?</content>
+                            <timestamp>2023-03-17T09:00:00</timestamp>
+                            <topic>Сімейні собаки</topic>
+                            <keywords>
+                                <keyword>діти</keyword> 
+                                <keyword>сімейні собаки</keyword> 
+                                <keyword>породи собак</keyword> 
+                            </keywords>
+                            <comments>
+                                <comment id="dogComment2-1">
+                                    <author userId="user14">Користувач14</author>
+                                    <content>Лабрадори є відомими своєю дружелюбністю та терпінням до дітей.</content>
+                                    <timestamp>2023-03-17T09:20:00</timestamp>
+                                    
+                                    <comments>
+                                        <comment id="comment1-1">
+                                            <author userId="user3">Користувач13</author>
+                                            <content>Дякую.</content>
+                                            <timestamp>2023-03-15T13:00:00</timestamp>
+                                           
+                                        </comment>
+                                    </comments>
+                                </comment>
+                            </comments>
+                        </post>
+                        
+                    </posts>
+                </thread>
+                <!-- Інші теми -->
+            </threads>
+        </category>
+        <!-- Інші категорії -->
+    </categories>
+    <users>
+        <user id="user1">
+            <username>Користувач1</username>
+            <joinedDate>2023-01-01</joinedDate>
+        </user>
+        <user id="user2">
+            <username>Користувач2</username>
+            <joinedDate>2023-02-15</joinedDate>
+        </user>
+        <user id="user3">
+            <username>Користувач3</username>
+            <joinedDate>2023-03-01</joinedDate>
+        </user>
+        <user id="user4">
+            <username>Користувач4</username>
+            <joinedDate>2023-04-15</joinedDate>
+        </user>
+    </users>
+</animalForum>
